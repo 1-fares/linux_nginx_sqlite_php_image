@@ -14,7 +14,7 @@ apt-get update && apt-get upgrade -y && apt-get install git -y && git clone http
 cd linux_nginx_sqlite_php_image
 ./debian_install_software.sh
 ```
-Line to copy/paste:
+Line to copy/paste for a new Debian deployment:
 ```
 apt-get update && apt-get upgrade -y && apt-get install git -y && git clone https://github.com/1-fares/linux_nginx_sqlite_php_image.git && cd linux_nginx_sqlite_php_image && ./debian_install_software.sh
 ```
