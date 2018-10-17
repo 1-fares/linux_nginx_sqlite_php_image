@@ -11,6 +11,7 @@ apt-get update && apt-get upgrade -y && apt-get install git -y && git clone http
 
 ## Installation with script on Debian
 ```
+cd linux_nginx_sqlite_php_image
 ./debian_install_software.sh
 ```
 ## Installation without script
