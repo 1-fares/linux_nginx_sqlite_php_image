@@ -33,9 +33,13 @@ add-apt-repository \
 	"deb [arch=amd64] https://download.docker.com/linux/debian \
 	$(lsb_release -cs) \
 	stable" && \
+curl -fsSL https://packages.sury.org/php/apt.gpg | sudo apt-key add - && \
+add-apt-repository \
+	"deb https://packages.sury.org/php/ \
+	$(lsb_release -cs) \
+	main" && \
 apt-get update && \
-apt-get install docker-ce -y && \
-git clone -b PHP-7.2 https://github.com/php/php-src.git ../php-src &&\
-./build_php.sh && exit 0
+apt-get install docker-ce php7.2 -y && \
+exit 0
 
 exit 1
