@@ -15,10 +15,10 @@ apt-get install \
 	gnupg2 \
 	software-properties-common \
 	git \
-	autoconf \ # to build php (start)
+	autoconf \
 	bison \
 	libxml2-dev \
-	libsqlite3-dev \ # to build php (end)
+	libsqlite3-dev \
 	-y \
 	&& \
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - && \
