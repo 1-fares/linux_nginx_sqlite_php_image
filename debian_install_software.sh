@@ -9,6 +9,7 @@ fi
 
 apt-get update && \
 apt-get install \
+	bash \
 	apt-transport-https \
 	ca-certificates \
 	curl \
@@ -29,8 +30,4 @@ add-apt-repository \
 apt-get update && \
 apt-get install docker-ce -y && \
 git clone https://github.com/php/php-src.git ../php-src &&\
-pushd ../php-src && \
-./buildconf && ./configure && make && make install && \
-popd && \
-rm -rf ../php-src
-
+./build_php.sh
