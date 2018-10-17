@@ -14,6 +14,11 @@ apt-get install \
 	curl \
 	gnupg2 \
 	software-properties-common \
+	git \
+	autoconf \ # to build php (start)
+	bison \
+	libxml2-dev \
+	libsqlite3-dev \ # to build php (end)
 	-y \
 	&& \
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - && \
@@ -22,4 +27,7 @@ add-apt-repository \
 	$(lsb_release -cs) \
 	stable" && \
 apt-get update && \
-apt-get install docker-ce -y
+apt-get install docker-ce -y && \
+git clone https://github.com/php/php-src.git .. &&\
+cd ../php-src && \
+./autoconf && ./configure && make && make install
