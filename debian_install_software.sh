@@ -39,7 +39,9 @@ add-apt-repository \
 	$(lsb_release -cs) \
 	main" && \
 apt-get update && \
-apt-get install docker-ce php7.2 -y && \
+apt-get install docker-ce -y && \
+git clone -b PHP-7.2 https://github.com/php/php-src.git ../php-src && \
+./build_php.sh && \
 exit 0
 
 exit 1
