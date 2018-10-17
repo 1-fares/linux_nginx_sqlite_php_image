@@ -1,0 +1,18 @@
+# Copyright (c) 2018-2019, Fares Abdullah, all rights reserved.
+
+version: '3'
+services:
+    web:
+        image: nginx
+        ports:
+                - "80:80"
+        volumes:
+                - &APPVOLUME ./app:/app
+                - ./log:/var/log/nginx
+                - ./default.conf:/etc/nginx/conf.d/default.conf
+        links:
+                - php
+    php:
+        image: php:7.2-fpm
+        volumes:
+                - *APPVOLUME
