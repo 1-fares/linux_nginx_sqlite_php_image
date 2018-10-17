@@ -30,4 +30,6 @@ add-apt-repository \
 apt-get update && \
 apt-get install docker-ce -y && \
 git clone https://github.com/php/php-src.git ../php-src &&\
-./build_php.sh
+./build_php.sh && exit 0
+
+exit 1
