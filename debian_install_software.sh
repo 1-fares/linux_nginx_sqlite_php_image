@@ -20,6 +20,12 @@ apt-get install \
 	bison \
 	libxml2-dev \
 	libsqlite3-dev \
+	libcurl4-openssl-dev \
+	libssl-dev \
+	pkg-config \
+	zlib1g-dev \
+	libzip-dev \
+	g++ \
 	-y \
 	&& \
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add - && \
