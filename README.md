@@ -4,6 +4,10 @@ Linux / Nginx / PHP+Sqlite Docker image for Symfony apps
 ## Installation
 1. Install Git
 1. Git clone this repository
+On Debian:
+```
+apt-get update && apt-get upgrade -y && apt-get install git -y && git clone https://github.com/1-fares/linux_nginx_sqlite_php_image.git
+```
 
 ## Installation with script on Debian
 ```
