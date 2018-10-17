@@ -3,5 +3,7 @@
 pushd ../php-src && \
 ./buildconf && ./configure && make && make install && \
 popd && \
-rm -rf ../php-src
+rm -rf ../php-src && \
+exit 0
 
+exit 1
