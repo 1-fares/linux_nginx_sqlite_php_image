@@ -14,6 +14,10 @@ apt-get update && apt-get upgrade -y && apt-get install git -y && git clone http
 cd linux_nginx_sqlite_php_image
 ./debian_install_software.sh
 ```
+Line to copy/paste:
+```
+apt-get update && apt-get upgrade -y && apt-get install git -y && git clone https://github.com/1-fares/linux_nginx_sqlite_php_image.git && cd linux_nginx_sqlite_php_image && ./debian_install_software.sh
+```
 ## Installation without script
 1. Install Docker (eg. [Docker CE](https://docs.docker.com/install/linux/docker-ce/debian/#install-using-the-repository))
 1. Install PHP 7.1 or higher (eg. [From Github](http://php.net/git.php))
