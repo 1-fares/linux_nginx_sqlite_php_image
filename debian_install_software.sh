@@ -28,7 +28,7 @@ add-apt-repository \
 	stable" && \
 apt-get update && \
 apt-get install docker-ce -y && \
-git clone https://github.com/php/php-src.git .. &&\
+git clone https://github.com/php/php-src.git ../php-src &&\
 pushd ../php-src && \
 ./autoconf && ./configure && make && make install && \
 popd && \
